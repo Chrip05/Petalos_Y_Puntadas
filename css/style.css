@@ -1,0 +1,231 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+      background-color: #fff9f6;
+      color: #333;
+    }
+
+    header {
+      background-color: #D86B71;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    #logo img {
+      height: 90px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffe2e2;
+    }
+
+    #carro img {
+      height: 30px;
+      cursor: pointer;
+    }
+
+   .banner {
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .banner h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .banner p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .main-container {
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: #D86B71;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .producto {
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .producto-info {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .producto-info h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .precio {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .add-to-cart {
+      background-color: #D86B71;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .add-to-cart:hover {
+      background-color: #c05561;
+    }
+
+    .cta {
+      background-color: #F49883;
+      padding: 50px 20px;
+      text-align: center;
+      color: #333;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .cta h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .cta button {
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: #D86B71;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cta button:hover {
+      background-color: #c05561;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #E3E4E7;
+      font-size: 14px;
+      color: #444;
+    }
+
+    #cart-popup {
+      position: fixed;
+      top: 80px;
+      right: 20px;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 9999;
+    }
+    .vermas{
+      background-color: transparent;
+      color: #D86B71;
+      border: 1px solid #D86B71;
+      padding: 6px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      margin-top: 5px;
+    }
+    .vermas:hover{
+      background-color: #D86B71;
+      color: white;
+    }
+    #decoracion{
+  background-color: #ffe9e9;
+  padding: 40px 20px;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+#decoracion h1{
+  color: #D86B71;
+  font-size: 36px;
+  margin: 0;
+  text-shadow: none;
+}
+
+    

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puntadas y Pétalos</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <img src="css/Beige & Black Aesthetic Flower Boutique Logo.png" alt="Logo Flores">
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="amigurumis.html">Amigurumis</a>
+      <a href="flores.html">Flores</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div id="carro" onclick="toggleCart()">
+      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrito">
+    </div>
+  </header>
+
+  <div id="cart-popup"></div>
+
+   <section class="banner" id="inicio">
+    <div id="decoracion">
+    <h1>¡Amigurumis de la más alta calidad!</h1>
+    </div>
+  </section>
+
+  <div class="main-container">
+    <h2 class="section-title" id="amigurumis">Nuestros Amigurumis</h2>
+    <section class="productos" id="productos">
+      <div class="producto">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.CM1_gqE1U5AgumgfqlcBfAHaHw?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Batman">
+        <div class="producto-info">
+          <h3>Amigurumi Batman</h3>
+          <p class="precio">$9.99 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Amigurumi Batman', 9.99)">Agregar al carrito</button>
+          <a href="infoamigurumi.html"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="img/Spiderman.jpeg" alt="Spiderman">
+        <div class="producto-info">
+          <h3>Amigurumi del increíble Spiderman</h3>
+          <p class="precio">$7.50 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Spiderman', 7.50)">Agregar al carrito</button>
+          <a href="infoamigurumi2.html"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="img/Goku.jpeg" alt="Goku">
+        <div class="producto-info">
+          <h3>Amigurumi del guerrero legendario, Goku</h3>
+          <p class="precio">$11.00 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Goku', 11.00)">Agregar al carrito</button>
+          <a href="il"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="img/Bluey.jpeg" alt="Bluey">
+        <div class="producto-info">
+          <h3>Amigurumi de Bluey</h3>
+          <p class="precio">$8.25 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Bluey', 8.25)">Agregar al carrito</button>
+          <a href="il"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+       <div class="producto">
+        <img src="img/Gorro Fresa.jpeg" alt="Gorro de Fresa">
+        <div class="producto-info">
+          <h3>Amigurumi de Gorro de Fresa</h3>
+          <p class="precio">$11.00 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Adorable Gorro de Fresa', 11.00)">Agregar al carrito</button>
+          <a href="iml"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+       <div class="producto">
+        <img src="img/Appa.jpeg" alt="Appa de Avatar">
+        <div class="producto-info">
+          <h3>Amigurumi de Appa de El Avatar</h3>
+          <p class="precio">$11.00 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Appa', 11.00)">Agregar al carrito</button>
+          <a href="il"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+       <div class="producto">
+        <img src="img/Fercho.jpeg" alt="Ferxxo">
+        <div class="producto-info">
+          <h3>Amigurumi de Ferxxo</h3>
+          <p class="precio">$11.00 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Ferxxo', 11.00)">Agregar al carrito</button>
+          <a href="il"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+       <div class="producto">
+        <img src="img/Gojo.jpeg" alt="Gojo">
+        <div class="producto-info">
+          <h3>Amigurumi Gojo</h3>
+          <p class="precio">$11.00 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Gojo', 11.00)">Agregar al carrito</button>
+          <a href="inl"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+       <div class="producto"; id="ultimosdiv">
+        <img src="img/Miles Morales.jpeg" alt="Miles Morales">
+        <div class="producto-info">
+          <h3>Amigurumi de Miles Morales, Spiderman</h3>
+          <p class="precio">$11.00 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Miles Morales', 11.00)">Agregar al carrito</button>
+          <a href="infml"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+       <div class="producto"; id="ultimosdiv">
+        <img src="img/Full Metal.jpeg" alt="Edward Elric">
+        <div class="producto-info">
+          <h3>Amigurumi de Edward Elric</h3>
+          <p class="precio">$11.00 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Edward Elric', 11.00)">Agregar al carrito</button>
+          <a href="infl"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="ofertas">
+      <h2>¡Aprovecha nuestras ofertas especiales!</h2>
+      <p>Descuentos en tus personajes favoritos por tiempo limitado.</p>
+      <button>Ver promociones</button>
+    </section>
+  </div>
+
+  <footer id="contacto">
+    <p>Contáctanos | WhatsApp: +503 7000-0000 | Instagram: @puntadasypetalos | Facebook: Puntadas y Pétalos</p>
+    <p>&copy; 2025 Puntadas y Pétalos.</p>
+  </footer>
+
+  <script>
+    let cart = [];
+
+    function addToCart(product, price) {
+      cart.push({ product, price });
+      alert(product + ' agregado al carrito.');
+      updateCart();
+    }
+
+    function toggleCart() {
+      const popup = document.getElementById('cart-popup');
+      popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function updateCart() {
+      const popup = document.getElementById('cart-popup');
+      if (cart.length === 0) {
+        popup.innerHTML = '<strong>El carrito está vacío.</strong>';
+        return;
+      }
+      let html = '<strong>Carrito:</strong><ul>';
+      cart.forEach(item => {
+        html += `<li>${item.product} - $${item.price.toFixed(2)}</li>`;
+      });
+      html += '</ul>';
+      popup.innerHTML = html;
+    }
+  </script>
+</body>
+
+</html>

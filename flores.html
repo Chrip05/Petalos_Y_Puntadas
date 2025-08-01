@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puntadas y Pétalos</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <img src="css/Beige & Black Aesthetic Flower Boutique Logo.png" alt="Logo Flores">
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="amigurumis.html">Amigurumis</a>
+      <a href="flores.html">Flores</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div id="carro" onclick="toggleCart()">
+      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrito">
+    </div>
+  </header>
+
+  <div id="cart-popup"></div>
+
+  <section class="banner" id="inicio">
+    <div id="decoracion">
+    <h1>Flores de liston unicas, hechas a mano con amor.</h1>
+    </div>
+  </section>
+
+  <div class="main-container">
+    <h2 class="section-title" id="amigurumis">Diseños unicos que combinan creatividad y diseño.</h2>
+    <section class="productos" id="productos">
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/70/26/05/702605eb3fee4b23740f68cfa276c7ed.jpg" alt="Ramo sencillo">
+        <div class="producto-info">
+          <h3>Ramo sencillo</h3>
+          <p class="precio">$5.99 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Ramo sencillo', 5.99)">Agregar al carrito</button>
+          <a href="inforosas.html"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/originals/2b/53/d3/2b53d35a3cca0f12e3c6e8af0180f8d5.jpg" alt="Ramo mariposa">
+        <div class="producto-info">
+          <h3>Ramo mariposa</h3>
+          <p class="precio">$6.50 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Ramo maariposa', 6.50)">Agregar al carrito</button>
+          <a href="inforosas2.html"><button class="vermas">Ver más </button></a>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.WMMepRUlua4G-uv-QJq2vwHaJ4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="3 rosas">
+        <div class="producto-info">
+          <h3>Conjunto de 3 rosas</h3>
+          <p class="precio">$4.00 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Conjunto de 3 rosas ', 4.00)">Agregar al carrito</button>
+          <button class="vermas">Ver más </button>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.jFpHFkxy_HWszWa8uHLUfAHaH_?r=0&w=794&h=857&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Rosas amarillas">
+        <div class="producto-info">
+          <h3>Rosas amarillas</h3>
+          <p class="precio">$4.25 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Rosas amarillas', 4.25)">Agregar al carrito</button>
+          <button class="vermas">Ver más </button>
+        </div>
+        </div>
+        
+         <div class="producto">
+        <img src="https://i.pinimg.com/originals/a6/25/ec/a625ecebd6239d7bf89ca9b63f7d867b.jpg" alt="Ramo complejo">
+        <div class="producto-info">
+          <h3>Ramo complejo</h3>
+          <p class="precio">$9.99 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Ramo complejo', 9.99)">Agregar al carrito</button>
+          <button class="vermas">Ver más </button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="https://i.pinimg.com/736x/93/b7/de/93b7de875d075f40c7646a6d4640e57e.jpg" alt="Raamo blanco">
+        <div class="producto-info">
+          <h3>Ramo blanco</h3>
+          <p class="precio">$11.55 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Ramo blanco', 11.55)">Agregar al carrito</button>
+          <button class="vermas">Ver más </button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.JNGcTjDUzxNmEDzft-9wDwHaJ3?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ramo de Spiderman">
+        <div class="producto-info">
+          <h3>Ramo de Spiderman</h3>
+          <p class="precio">$7.85 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Ramo de Spiderman', 7.85)">Agregar al carrito</button>
+          <button class="vermas">Ver más </button>
+        </div>
+        </div>
+
+         <div class="producto">
+        <img src="https://i.pinimg.com/originals/ae/10/8c/ae108c04c18601c718f2b6f084657497.jpg" alt="Ramo de hello kitty">
+        <div class="producto-info">
+          <h3>Ramo de hello kitty</h3>
+          <p class="precio">$10.25 USD</p>
+          <button class="add-to-cart" onclick="addToCart('Ramo de hello kitty', 10.25)">Agregar al carrito</button>
+          <button class="vermas">Ver más </button>
+        </div>
+        </div>
+        
+        
+
+
+        
+
+       
+    </section>
+
+   
+  </div>
+
+  <footer id="contacto">
+    <p>Contáctanos | WhatsApp: +503 7000-0000 | Instagram: @puntadasypetalos | Facebook: Puntadas y Pétalos</p>
+    <p>&copy; 2025 Puntadas y Pétalos.</p>
+  </footer>
+
+  <script>
+    let cart = [];
+
+    function addToCart(product, price) {
+      cart.push({ product, price });
+      alert(product + ' agregado al carrito.');
+      updateCart();
+    }
+
+    function toggleCart() {
+      const popup = document.getElementById('cart-popup');
+      popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function updateCart() {
+      const popup = document.getElementById('cart-popup');
+      if (cart.length === 0) {
+        popup.innerHTML = '<strong>El carrito está vacío.</strong>';
+        return;
+      }
+      let html = '<strong>Carrito:</strong><ul>';
+      cart.forEach(item => {
+        html += `<li>${item.product} - $${item.price.toFixed(2)}</li>`;
+      });
+      html += '</ul>';
+      popup.innerHTML = html;
+    }
+  </script>
+</body>
+
+</html>

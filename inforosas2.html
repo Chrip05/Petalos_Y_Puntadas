@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramo sencillo | Puntadas y Pétalos</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <style>
+        .productodetalle {
+      display: flex;
+      gap: 30px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 20px;
+      max-width: 1000px;
+      flex-wrap: wrap;
+    }
+    .productodetalle img{
+         width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .productoinfo {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+
+    .productoinfo h3 {
+      font-size: 28px;
+      color: #D86B71;
+      margin-bottom: 10px;
+    }
+
+    .precio {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .productoinfo p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .carritoagg {
+      background-color: #D86B71;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      align-self: flex-start;
+    }
+
+    .carritoagg:hover {
+      background-color: #c05561;
+    }
+    </style>
+
+  <header>
+    <div id="logo">
+      <img src="css/Beige & Black Aesthetic Flower Boutique Logo.png" alt="Logo Flores">
+    </div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="amigurumis.html">Amigurumis</a>
+      <a href="flores.html">Flores</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div id="carro" onclick="toggleCart()">
+      <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrito">
+    </div>
+  </header>
+
+  <div id="cart-popup"></div>
+
+  <section class="banner">
+    <div id="decoracion">
+      <h1>Ramo Mariposa</h1>
+    </div>
+  </section>
+
+  <div class="main-container">
+    <div class="productodetalle">
+      <img src="https://i.pinimg.com/originals/2b/53/d3/2b53d35a3cca0f12e3c6e8af0180f8d5.jpg" alt="Ramo mariposa">
+      <div class="productoinfo">
+        <h3>Ramo Mariposa</h3>
+        <p class="precio">$5.99 USD</p>
+        <p>Este ramo de rosas con mariposas hechas con listón, combina delicadeza y elegancia. Ideal para regalar en ocasiones especiales o simplemente para expresar tu cariño con un detalle hecho a mano. Está disponible en varios colores y envuelto con papel artesanal, con distintos estilos de mariposas.</p>
+        <button class="carritoagg" onclick="addToCart('Ramo Mariposa', 5.99)">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contacto">
+    <p>Contáctanos | WhatsApp: +503 7000-0000 | Instagram: @puntadasypetalos | Facebook: Puntadas y Pétalos</p>
+    <p>&copy; 2025 Puntadas y Pétalos.</p>
+  </footer>
+
+  <script>
+    let cart = [];
+
+    function addToCart(product, price) {
+      cart.push({ product, price });
+      alert(product + ' agregado al carrito.');
+      updateCart();
+    }
+
+    function toggleCart() {
+      const popup = document.getElementById('cart-popup');
+      popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function updateCart() {
+      const popup = document.getElementById('cart-popup');
+      if (cart.length === 0) {
+        popup.innerHTML = '<strong>El carrito está vacío.</strong>';
+        return;
+      }
+      let html = '<strong>Carrito:</strong><ul>';
+      cart.forEach(item => {
+        html += `<li>${item.product} - $${item.price.toFixed(2)}</li>`;
+      });
+      html += '</ul>';
+      popup.innerHTML = html;
+    }
+  </script>
+
+</body>
+</html>
